@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.masonry {
+  column-gap: 1em;
+  column-count: 1;
+}
+
+.sm\:masonry-sm {
+  column-count: 2;
+}
+
+.md\:masonry-md {
+  column-count: 3;
+}
+
+.lg\:masonry-lg {
+  column-count: 4;
+}
+
+/* Prevent elements from breaking across columns */
+.break-inside-avoid {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
