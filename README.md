@@ -6,5 +6,4 @@ It's a full stack MERN application , which fetches the events from the ticketmas
 ## Technology used
 MERN 
 
-## Screenshots
-![Screenshot](./assets/screenshot.png)
+
