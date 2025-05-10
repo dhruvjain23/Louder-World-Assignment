@@ -2,24 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.masonry {
-  column-gap: 1em;
-  column-count: 1;
+@media (min-width: 640px) { /* sm */
+  .sm\:masonry-sm {
+    column-count: 2;
+  }
 }
 
-.sm\:masonry-sm {
-  column-count: 2;
+@media (min-width: 768px) { /* md */
+  .md\:masonry-md {
+    column-count: 3;
+  }
 }
 
-.md\:masonry-md {
-  column-count: 3;
+@media (min-width: 1024px) { /* lg */
+  .lg\:masonry-lg {
+    column-count: 4;
+  }
 }
 
-.lg\:masonry-lg {
-  column-count: 4;
+/* Prevent breaking cards across columns */
+.break-inside-avoid {
+  break-inside: avoid;
 }
 
-/* Prevent elements from breaking across columns */
 .break-inside-avoid {
   break-inside: avoid;
   page-break-inside: avoid;
