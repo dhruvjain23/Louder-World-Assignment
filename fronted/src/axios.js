@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosInstance = axios.create({
-    baseURL:"http://localhost:3000/api",
+    baseURL:"https://louder-world-assignment.vercel.app/api" || "http://localhost:3000/api",
     withCredentials:true
 })
 
